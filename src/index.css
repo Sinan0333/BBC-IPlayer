@@ -5,3 +5,12 @@
 *{
     background-color: black;
 }
+
+.banner-gradient {
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: radial-gradient(circle, rgba(29,29,29,1) 0%, rgba(0,0,0,0.9725140056022409) 43%, rgba(80,80,80,0) 96%);
+}
+
+.trailer-button-color{
+    background-color: rgba(65, 62, 62, 0.5);
+}
