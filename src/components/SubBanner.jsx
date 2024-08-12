@@ -1,9 +1,8 @@
 import React from 'react'
-import Carousel from './Carousel';
 
-function Banner() {
-    return (
-        <section className=" text-white flex flex-col items-center  px-30 ">
+function SubBanner() {
+  return (
+    <section className=" text-white flex flex-col items-center  px-30 ">
           <div className="container mx-auto flex flex-col md:flex-row items-center justify-between ">
             <div className="max-w-lg ml-4 mt-20">
               <h1 className="text-3xl font-bold mb-4">The Jetty</h1>
@@ -18,9 +17,8 @@ function Banner() {
                 <img src="https://ichef.bbci.co.uk/images/ic/1872x1053/p0j91dt3.jpg" alt="The Jetty" className="w-full h-auto "/>
             </div>
           </div>
-          <Carousel/>
-        </section>
-      );
+    </section>
+  )
 }
 
-export default Banner
+export default SubBanner
