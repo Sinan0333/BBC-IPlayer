@@ -2,9 +2,9 @@ import React from 'react'
 
 function SubBanner() {
   return (
-    <section className=" text-white flex flex-col items-center  px-30 ">
-          <div className="container mx-auto flex flex-col md:flex-row items-center justify-between ">
-            <div className="max-w-lg ml-4 mt-20">
+    <section className=" text-white flex flex-col items-center max-w-[1280px] mx-auto ">
+          <div className="mx-auto flex flex-col-reverse md:flex-row md:items-center justify-between">
+            <div className="max-w-lg ml-4 md:mt-20 mb-8">
               <h1 className="text-3xl font-bold mb-4">The Jetty</h1>
               <p className="mb-4 text-sm">What if the truth destroys you? Dark secrets spark shocking consequences in a sleepy town.</p>
               <p className="font-semibold mb-4">What if the truth destroys you?</p>

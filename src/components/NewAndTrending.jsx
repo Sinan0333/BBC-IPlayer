@@ -14,27 +14,18 @@ function NewAndTrending({title,image}) {
     const scrollLeft = () => {
       if (carouselRef.current) {
         carouselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
-        const firstDiv = carouselRef.current.querySelector('#one')
-        if(firstDiv.getBoundingClientRect().x <=120){
-            carouselRef.current.style.marginLeft = '0px'
-        }
       }
     };
   
     const scrollRight = () => {
       if (carouselRef.current) {
         carouselRef.current.scrollBy({ left: 300, behavior: 'smooth' });
-        const firstDiv = carouselRef.current.querySelector('#one')
-        if(firstDiv.getBoundingClientRect().x <=120){
-            carouselRef.current.style.marginLeft = '0px'
-        }
-        
       }
     };
   
     return (
       <div className="relative mb-8">
-        <h2 className="text-white text-2xl font-bold mb-4 ml-30">{title}</h2>
+        <h2 className="text-white text-2xl font-bold mb-4 xl:ml-30">{title}</h2>
         <List carouselRef={carouselRef} image={image}/>
         <button
           onClick={scrollLeft}

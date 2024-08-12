@@ -14,13 +14,13 @@ function App() {
 
 
   return (
-    < div className="bg-black">
+  <div className="w-full bg-black">
      <Header/>
      <SubHeader/>
-     <Banner isCarousel={true}/>
-     <div className="relative mt-4">
-      <div className="left-fade absolute h-full z-10"></div>
-      <div className="left-fade absolute right-0 h-full z-10"></div>
+     <Banner/>
+     <div className="relative mt-4 mx-auto max-xl:px-4">
+      <div className="hidden xl:block fade absolute h-full z-10"></div>
+      <div className="hidden xl:block fade absolute right-0 h-full z-10"></div>
       <NewAndTrending title={"New & Trending"} image={img1}/>
       <SubBanner/>
       <NewAndTrending title={"Stream Every Episode"} image={img2}/>
@@ -31,8 +31,8 @@ function App() {
       <NewAndTrending title={"Comedy"} image={img1}/>
       <SubFooter/>
      </div>
-      <Footer/>
-    </div>
+      {/* <Footer/> */}
+  </div>
   )
 }
 

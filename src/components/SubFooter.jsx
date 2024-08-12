@@ -2,7 +2,7 @@ import React from 'react'
 
 function SubFooter() {
   return (
-    <div className="bg-black text-white text-sm py-2 h-20 flex justify-between px-30 border-t">
+    <div className="bg-black text-white text-sm py-2 h-20 flex justify-between xl:px-30 border-t">
       <div className="flex space-x-4">
         <div>
           <span className="text-gray-400">Change location: </span>
