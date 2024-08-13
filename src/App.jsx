@@ -1,14 +1,12 @@
+import { animation, comedy, documentary, drama, getTrendingMovies, mostPopular, popular, streamEveryDay, subBanner1, subBanner2, TVMovies, upcoming } from "./api"
 import Banner from "./components/Banner"
 import Footer from "./components/Footer"
-// import Carousel from "./components/Carousel"
 import Header from "./components/Header"
-import NewAndTrending from "./components/NewAndTrending"
+import List from "./components/List"
 import SubBanner from "./components/SubBanner"
 import SubFooter from "./components/SubFooter"
 import SubHeader from "./components/SubHeader"
 
-const img1 = "https://ichef.bbci.co.uk/images/ic/464x261/p0jg5tzg.jpg"
-const img2 = "https://ichef.bbci.co.uk/images/ic/464x696/p0flnjk4.jpg"
 
 function App() {
 
@@ -21,17 +19,20 @@ function App() {
      <div className="relative mt-4 mx-auto max-xl:px-4">
       <div className="hidden xl:block fade absolute h-full z-10"></div>
       <div className="hidden xl:block fade absolute right-0 h-full z-10"></div>
-      <NewAndTrending title={"New & Trending"} image={img1}/>
-      <SubBanner/>
-      <NewAndTrending title={"Stream Every Episode"} image={img2}/>
-      <NewAndTrending title={"Most Popular"} image={img1}/>
-      <NewAndTrending title={"BBC News"} image={img1}/>
-      <SubBanner/>
-      <NewAndTrending title={"Drama"} image={img1}/>
-      <NewAndTrending title={"Comedy"} image={img1}/>
+      <List title={"Popular"} getData={popular}/>
+      <SubBanner getData={subBanner1}/>
+      <List title={"Stream Every Episode"} getData={streamEveryDay} poster={true}/>
+      <List title={"Most Popular"} getData={mostPopular }/>
+      <List title={"Upcoming"} getData={upcoming}/>
+      <SubBanner getData={subBanner2}/>
+      <List title={"Documentary"} getData={documentary}/>
+      <List title={"Drama"} getData={drama}/>
+      <List title={"Comedy"} getData={comedy}/>
+      <List title={"Animation"} getData={animation}/>
+      <List title={"TV Movies"} getData={TVMovies}/>
       <SubFooter/>
      </div>
-      {/* <Footer/> */}
+      <Footer/>
   </div>
   )
 }
