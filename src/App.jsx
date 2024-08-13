@@ -1,4 +1,4 @@
-import { animation, comedy, documentary, drama, getTrendingMovies, mostPopular, popular, streamEveryDay, subBanner1, subBanner2, TVMovies, upcoming } from "./api"
+import { animation, comedy, documentary, drama, mostPopular, popular, streamEveryDay, subBanner1, subBanner2, TVMovies, upcoming } from "./api"
 import Banner from "./components/Banner"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
